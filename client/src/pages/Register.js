@@ -76,7 +76,7 @@ function Register() {
                 className="p-2"
               />
             </Form.Item>
-            <button className="btn2 mt-2 mb-3">Register</button>
+            <button type="submit" className="btn2 mt-2 mb-3">Register</button>
             <br />
             <Link to="/Login">Click here to Login</Link>
           </Form>
