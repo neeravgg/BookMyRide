@@ -1,63 +1,50 @@
-# ✨ API, CRM, Client and Mobile application of **_dhan-gaadi_**, an online bus booking system
+# Car-Rental-App
+- It is a Rent a car website where Customers can book the cars by paying through Stripe. 
+- Admin can see the bookings and can manage the cars. 
+- If a car is booked for a time span no other customer can book the same car on same time span.
 
-<p>
-<img src="https://img.shields.io/badge/CRM-ReactJS-blue?logo=react">
-<img src="https://img.shields.io/badge/Client-NextJS-%23000?logo=next.js">
-<img src="https://img.shields.io/badge/Mobile App-React Native-61dafb?logo=android">
-<img src="https://img.shields.io/badge/Backend-NodeJS-green?logo=node.js">
-<img src="https://img.shields.io/badge/DataBase-MongoDB-lightgreen?logo=mongoDB">
+## Technologies Used
 
-</p>
+- ReactJs
+- Nodejs
+- Express.js
+- MongoDB
 
-## Demo (Client => NextJS): 
+## Technologies and Tools used in Project with the respective versions
 
-![](./demo/client.gif)
-### To run -> 
-* #### clone the entire repo
-* #### go to server repo
-* #### make environment file with the following keys' values:
-```
-MONGO_URI = "path to mongodb url"
-userEmail = "your email"
-userPass = "your password"
-JWT_SECRET = "your secret here"
-```
-* #### yarn
-* #### yarn server
-* #### go to client repo
-* #### yarn
-* #### yarn dev
+### IDE
+
+| Sr. No. |     Technology     | Version |
+| :------ | :----------------: | :-----: |
+| 1.      | Visual Studio Code |  1.65   |
+
+### Database
+
+| Sr. No. | Technology | Version |
+| :------ | :--------: | :-----: |
+| 1.      |  MongoDB   |   3.6   |
+
+### Programming Language and NPM Packages
+
+| Sr. No. |  Technology  | Version |
+| :------ | :----------: | :-----: |
+| 1.      |   React.js   | 17.0.2 |
+| 2.      |   Node.js    | 16.13.1 |
+| 3.      |   Stripe     | 8.194.0 |
+| 4.      |   Nodemon    |  2.0.7  |
+| 5.      |  Express.js  |  4.17.1   |
+| 6.      |   Mongoose   | 6.0.13  |
+| 7.      |  styled-components   |  5.3.3  |
+| 8.      |   uuid       |  8.3.2  |
+| 9.      |   react-redux       |  7.2.6 |
 
 
 
-## Demo (CRM => React):
-![](./demo/CRM.gif)
-### To run -> 
-* #### clone the entire repo
-* #### go to server repo
-* #### make environment file with the following keys' values:
-```
-MONGO_URI = "path to mongodb url"
-userEmail = "your email"
-userPass = "your password"
-JWT_SECRET = "your secret here"
-```
-* #### yarn
-* #### yarn server
-* #### go to CRM repo
-* #### make environment file with the following keys' values: 
-```
-REACT_APP_API_URL = http://localhost:8525/api
-REACT_APP_SERVER_ROUTE = http://localhost:8525
-REACT_APP_JWT_SECRET = "your secret here"
-```
-* #### yarn
-* #### yarn start
+### [User Panel Demo](https://www.youtube.com/watch?v=l4MMxoHn__8) (click to open the video)
+[![user demo](https://img.youtube.com/vi/l4MMxoHn__8/sddefault.jpg)](https://www.youtube.com/watch?v=l4MMxoHn__8)
 
-## Demo (Mobile App => React-Native) *Under construction*
-![](./demo/App.gif)
-### To run -> 
-* #### clone the entire repo
-* #### go to app repo
-* #### yarn
-* #### having expo installed in your system, expo start
+
+### [Admin Panel Demo](https://www.youtube.com/watch?v=2JC6r0FfGdo) (click to open the video)
+[![admin demo](https://img.youtube.com/vi/2JC6r0FfGdo/sddefault.jpg)](https://www.youtube.com/watch?v=2JC6r0FfGdo)
+
+

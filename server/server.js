@@ -1,55 +1,32 @@
-// Packages
-const expressValidator = require("express-validator");
 const express = require("express");
-require("express-async-errors");
-const cors = require("cors");
-require("dotenv").config();
+const path = require("path");
 const app = express();
-
-// Import methods
-const { runEveryMidnight, dbConnection, errorHandler } = require("./helpers");
-const logger = require("./helpers/logger");
-const runSeed = require("./seeds");
-
-// Database Connection
-dbConnection();
-runSeed();
-
-// Middlewares
-logger(app);
+const dbConnection = require("./Db/db");
+var cors = require("cors");
 app.use(cors());
+
 app.use(express.json());
-app.use(expressValidator());
-app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
 
-// Routes
-app.get("/", (req, res) => {
-  res.redirect("/api/users");
+const port = process.env.PORT || 8000;
+
+app.get("/hello", (req, res) => {
+  res.send("Hello!");
 });
 
-app.use("/api/auth-owner", require("./routes/auth-owner"));
-app.use("/api/auth-user", require("./routes/auth-user"));
-app.use("/api/bookings", require("./routes/booking"));
-app.use("/api/bus", require("./routes/bus"));
-app.use("/api/guests", require("./routes/guest"));
-app.use("/api/locations", require("./routes/location"));
-app.use("/api/owners", require("./routes/owner"));
-app.use("/api/travels", require("./routes/travel"));
-app.use("/api/users", require("./routes/user"));
+app.use("/api/cars/", require("./Routes/carsRoutes"));
+//refresh error
+app.use("/booking/api/cars/", require("./Routes/carsRoutes"));
+app.use("/editcar/api/cars/", require("./Routes/carsRoutes"));
+app.use("/api/users/", require("./Routes/usersRoutes"));
+app.use("/booking/api/bookings/", require("./Routes/bookingsRoute"));
+app.use("/api/bookings/", require("./Routes/bookingsRoute"));
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"));
 
-// Error handling middleware
-app.use(function (err, req, res, next) {
-  return res.status(500).json({
-    error: errorHandler(err) || "Something went wrong!",
-  });
-});
-
-// Run every-midnight to check if bus deporting date is passed
-runEveryMidnight();
-
-const port = process.env.PORT || 8525;
-
+//   app.get("*", (req, res) => {
+//     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+//   });
+// }
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server is running at port: ${port} `);
 });
