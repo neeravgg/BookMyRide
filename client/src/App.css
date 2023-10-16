@@ -2,7 +2,7 @@
   text-align: center;
 }
 * {
-  cursor: url("./crs.cur"), auto;
+  /* cursor: url("./crs.cur"), auto; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
