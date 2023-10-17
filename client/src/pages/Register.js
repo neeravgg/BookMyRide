@@ -12,11 +12,11 @@ function Register() {
     if (
       values.password.length >= 8 &&
       values.password.length < 23 &&
-      values.phone.length >= 11 &&
+      values.phone.length >= 10 &&
       values.phone.length < 13
     ) {
       dispatch(userRegister(values));
-      console.log(values);
+      // console.log(values);
     } else if (values.password.length > 24) {
       message.error("Password is very lengthy to remember");
     } else if (values.password.length < 8) {
