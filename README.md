@@ -8,8 +8,7 @@
 - ReactJs
 - Nodejs
 - Express.js
-- MongoDB
-- 
+- MongoDB 
 
 
 ![Home](https://github.com/neeravgg/BookMyRide/assets/68321206/0400224d-affe-4524-91b2-e3ae6b53302c)
