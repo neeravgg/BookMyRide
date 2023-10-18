@@ -12,10 +12,8 @@
 - 
 
 
-[![user demo](https://img.youtube.com/vi/l4MMxoHn__8/sddefault.jpg)](https://www.youtube.com/watch?v=l4MMxoHn__8)
+![Home](https://github.com/neeravgg/BookMyRide/assets/68321206/0400224d-affe-4524-91b2-e3ae6b53302c)
 
 
 
-[![admin demo](https://img.youtube.com/vi/2JC6r0FfGdo/sddefault.jpg)](https://www.youtube.com/watch?v=2JC6r0FfGdo)
-
-
+![booking](https://github.com/neeravgg/BookMyRide/assets/68321206/d72b2c02-95ff-4353-8d3d-bbc4e7d24951)
