@@ -12,7 +12,7 @@ const Chatwidget = () => {
 
   useEffect(() => {
     addResponseMessage(
-      `Welcome ${user.username}, I'm Marvin 🤖🖐️ a bot. How can i help you today?`
+      `Welcome ${user.username}, I'm Ridely 🤖🖐️ a bot. How can i help you today?`
     );
   }, []);
   const handleNewUserMessage = (newMessage) => {
@@ -40,7 +40,7 @@ const Chatwidget = () => {
       newMessage.includes("your name") ||
       newMessage.includes("Your name")
     ) {
-      addResponseMessage(`I'm marvin`);
+      addResponseMessage(`I'm Ridely`);
     } else if (
       newMessage.includes("my name") ||
       newMessage.includes("My name")
@@ -110,7 +110,7 @@ const Chatwidget = () => {
       newMessage.includes("Phone")
     ) {
       addResponseMessage(
-        `You can send your number here or can directly contact the owner via +923310145083`
+        `You can send your number here or can directly contact the owner via +91XXXXXXXXX`
       );
     } else if (newMessage.includes("hacker") || newMessage.includes("Hacker")) {
       addResponseMessage(`Hahaha, Nice joke 😄`);
@@ -134,10 +134,10 @@ const Chatwidget = () => {
       newMessage.includes("are you robot") ||
       newMessage.includes("Who are you")
     ) {
-      addResponseMessage(`I'm Marvin & I'm a Bot 🤖`);
+      addResponseMessage(`I'm Ridely & I'm a Bot 🤖`);
     } else {
       addResponseMessage(
-        `Sorry, I'm currently learning your language. I don't know the answer. Please contact on this number +923310145083.`
+        `Sorry, I'm currently learning your language. I don't know the answer. Please contact on this number +91XXXXXXXXX.`
       );
     }
   };
